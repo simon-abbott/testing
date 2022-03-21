@@ -1,0 +1,10 @@
+on:
+  push:
+
+jobs:
+  bad:
+    name: Bad Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: fails
+        run: "echo 'oh no!' ; false"
